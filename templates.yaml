@@ -1,0 +1,17 @@
+welcome: |
+  mg-lookup.
+
+welcome_re: |
+  mg-lookup. How may I help you?
+
+welcome_card: |
+  mg-lookup is an Alexa skill written by Ross Crawford-d'Heureuse. lookup things in mg
+
+stop_bye: |
+  Goodbye!
+
+cancel_bye: |
+  OK, goodbye!
+
+help_text: |
+  mg-lookup is an Alexa skill that does things. This is where the developer would normally explain how to do them.
