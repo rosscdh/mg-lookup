@@ -1,0 +1,4 @@
+NEXTMG_UpNext action town
+NEXTMG_UpNext in mg
+NEXTMG_UpNext something to do
+NEXTMG_UpNext Whats next in mg

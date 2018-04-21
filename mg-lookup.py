@@ -10,6 +10,8 @@ from datetime import datetime
 from flask import Flask, json, render_template
 from flask_ask import Ask, request, session, question, statement
 
+from feed import FEED
+
 __author__ = 'Ross Crawford-d\'Heureuse'
 __email__ = 'sendrossemail@gmail.com'
 
@@ -71,7 +73,10 @@ def whats_up_next():
     """
     (STATEMENT) Handles the 'stop' built-in intention.
     """
-    upnext_text = render_template('nextmg_upnext')
+    # https://nextmg.org/feed/
+    #import pdb;pdb.set_trace()
+    #upnext_text = render_template('nextmg_upnext')
+    upnext_text = FEED.get('entries', [])[0].title
     return statement(upnext_text)
 
 
