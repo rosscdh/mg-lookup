@@ -54,7 +54,7 @@ def handle_launch():
     welcome_re_text = render_template('welcome_re')
     welcome_card_text = render_template('welcome_card')
 
-    return question(welcome_text).reprompt(welcome_re_text).standard_card(title="mg-lookup",
+    return question(welcome_text).reprompt(welcome_re_text).standard_card(title="bah humbug",
                                                                           text=welcome_card_text)
 
 
@@ -65,6 +65,15 @@ def handle_launch():
 # or delete them/comment them out.
 #
 # More about built-in intents: http://d.pr/KKyx
+
+@ask.intent('NEXTMG_UpNext')
+def whats_up_next():
+    """
+    (STATEMENT) Handles the 'stop' built-in intention.
+    """
+    upnext_text = render_template('nextmg_upnext')
+    return statement(upnext_text)
+
 
 @ask.intent('AMAZON.StopIntent')
 def handle_stop():

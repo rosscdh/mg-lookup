@@ -30,3 +30,9 @@ Follow these easy steps to test your brand new Flask-Ask project.
 .. _This video: https://alexatutorial.com
 .. _John Wheeler: https://alexatutorial.com/flask-ask/
 .. _echosim: http://www.echosim.io/
+
+
+```
+docker build -t mg-lookup:latest -t registry.hub.docker.com/rosscdh/mg-lookup:latest .
+docker run --rm -it -p "5000:5000" -v $PWD:/srv/mg-lookup mg-lookup:latest
+```

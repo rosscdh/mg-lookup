@@ -1,5 +1,5 @@
 welcome: |
-  mg-lookup.
+  hi there welcome to mg lookup!!!!
 
 welcome_re: |
   mg-lookup. How may I help you?
@@ -14,4 +14,7 @@ cancel_bye: |
   OK, goodbye!
 
 help_text: |
+  mg-lookup is an Alexa skill that does things. This is where the developer would normally explain how to do them.
+
+nextmg_upnext: |
   mg-lookup is an Alexa skill that does things. This is where the developer would normally explain how to do them.
